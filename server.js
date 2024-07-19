@@ -5,7 +5,7 @@ const fs = require('fs');
 const docxToPdf = require('docx-pdf');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Set up Multer for file uploads
 const storage = multer.diskStorage({
